@@ -1,5 +1,5 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <Target Name="RunEmbeddinator" AfterTargets="AfterBuild" Inputs="$(OutputPath)/$(AssemblyName).dll" Outputs="$(IntermediateOutputPath)/Embeddinator/$(AssemblyName).framework/$(AssemblyName)">
-        <Exec Command="~/.nuget/packages/embeddinator-4000/0.4.0/tools/objcgen bin/Debug/netstandard2.1/DemoEmbeddinator.dll --target=framework --platform=iOS --outdir=output -c --debug" />
+        <Exec Command="~/.nuget/packages/embeddinator-4000/0.4.0/tools/objcgen bin/Debug/netstandard2.1/demo-embeddinator.dll --gen=Obj-C --target=framework --platform=iOS --outdir=output -c --debug" />
     </Target>
 </Project>
