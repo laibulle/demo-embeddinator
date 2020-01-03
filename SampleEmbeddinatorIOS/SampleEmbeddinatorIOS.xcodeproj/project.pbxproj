@@ -66,6 +66,7 @@
 		1ECB8D2A23BFE99F005B4E76 /* SampleEmbeddinatorIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleEmbeddinatorIOSUITests.swift; sourceTree = "<group>"; };
 		1ECB8D2C23BFE99F005B4E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ECB8D4923BFF770005B4E76 /* demo-embeddinator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "demo-embeddinator.framework"; path = "../demo-embeddinator/output/demo-embeddinator.framework"; sourceTree = "<group>"; };
+		1ECB8D4D23BFFB81005B4E76 /* SampleEmbeddinatorIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleEmbeddinatorIOS-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				1ECB8D0823BFE99C005B4E76 /* AppDelegate.swift */,
+				1ECB8D4D23BFFB81005B4E76 /* SampleEmbeddinatorIOS-Bridging-Header.h */,
 				1ECB8D0A23BFE99C005B4E76 /* SceneDelegate.swift */,
 				1ECB8D0C23BFE99C005B4E76 /* ViewController.swift */,
 				1ECB8D0E23BFE99C005B4E76 /* Main.storyboard */,
@@ -466,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.SampleEmbeddinatorIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleEmbeddinatorIOS/SampleEmbeddinatorIOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../demo-embeddinator/output/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,6 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.SampleEmbeddinatorIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SampleEmbeddinatorIOS/SampleEmbeddinatorIOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../demo-embeddinator/output/**";
 				TARGETED_DEVICE_FAMILY = "1,2";

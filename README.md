@@ -14,6 +14,27 @@ https://docs.microsoft.com/en-us/xamarin/tools/dotnet-embedding/get-started/inst
 - drag `demo-embeddinator/output/demo-embeddinator.framweork` in project
 - set to `Embed and sign` in __Framework, Libraries, and Embedded Content__
 
+You have to create a bridge to swift code
+
+https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift
+
+```
+//
+//  SampleEmbeddinatorIOS-Bridging-Header.h
+//  SampleEmbeddinatorIOS
+//
+//  Created by Guillaume Bailleul on 03/01/2020.
+//  Copyright © 2020 Guillaume Bailleul. All rights reserved.
+//
+
+#ifndef SampleEmbeddinatorIOS_Bridging_Header_h
+#define SampleEmbeddinatorIOS_Bridging_Header_h
+
+
+
+#endif /* SampleEmbeddinatorIOS_Bridging_Header_h */
+```
+
 __Limitations__
 
 https://docs.microsoft.com/en-us/xamarin/tools/dotnet-embedding/limitations
