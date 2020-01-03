@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Embeddinator-4000" Version="0.4.0" />
+  </ItemGroup>
+
+  <Import Project="Embeddinator-4000.targets" />
+</Project>
