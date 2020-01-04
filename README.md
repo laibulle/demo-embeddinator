@@ -38,3 +38,9 @@ https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/
 __Limitations__
 
 https://docs.microsoft.com/en-us/xamarin/tools/dotnet-embedding/limitations
+
+Delegate and events are not supported here is a workaround
+
+https://github.com/lemonmojo/E4kBackgroundTest
+
+or you can do polling

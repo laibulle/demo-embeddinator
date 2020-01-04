@@ -15,7 +15,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Greeter.greet()
+        let gret = Greeter()
+        
+        DispatchQueue.global(qos: .background).async {
+            print(gret?.greet())
+        }
+        
+        DispatchQueue.global(qos: .background).async {
+            var prevCount = 0
+            while (gret?.isFinished() == false) {
+                usleep(100000) //will sleep for 0.1 second
+                let persones = gret?.getPersones()
+                if(persones?.count != prevCount) {
+                    print(persones)
+                    prevCount = persones!.count
+                }
+            }
+        }
+        
         return true
     }
 
