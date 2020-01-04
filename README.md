@@ -49,3 +49,6 @@ or you can do polling
 ## Usage with flutter
 
 https://medium.com/@Chetan/flutter-communicate-with-android-activity-or-ios-viewcontroller-through-method-channel-c11704429cd0
+
+
+flutter communication https://medium.com/flutter/flutter-platform-channels-ce7f540a104e

@@ -1,4 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+
+const platform = const MethodChannel('samples.flutter.dev/battery');
+
+String _batteryLevel = 'Unknown battery level.';
+
+Future<void> _getBatteryLevel() async {
+  String batteryLevel;
+  try {
+    final int result = await platform.invokeMethod('getBatteryLevel');
+    batteryLevel = 'Battery level at $result % .';
+  } on PlatformException catch (e) {
+    batteryLevel = "Failed to get battery level: '${e.message}'.";
+  }
+
+  //setState(() {
+  //  _batteryLevel = batteryLevel;
+  //});
+}
 
 void main() => runApp(MyApp());
 
@@ -102,9 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+        onPressed: _getBatteryLevel,
+        child: Text("Start"),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
