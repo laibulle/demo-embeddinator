@@ -44,3 +44,8 @@ Delegate and events are not supported here is a workaround
 https://github.com/lemonmojo/E4kBackgroundTest
 
 or you can do polling
+
+
+## Usage with flutter
+
+https://medium.com/@Chetan/flutter-communicate-with-android-activity-or-ios-viewcontroller-through-method-channel-c11704429cd0
